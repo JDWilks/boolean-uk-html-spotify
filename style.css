@@ -1,0 +1,103 @@
+/* Base styling apply to elements across your site*/
+
+body{
+    background-color: black;
+    height: 100vh;
+    display: grid;
+    grid-template: 
+    "left header" 80px
+    "left main" 1fr
+    "footer footer" 80px / 
+    1fr 5fr ;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;  
+}
+
+
+
+/* Utility classes - shared behaviour across elements  */
+
+p{
+    font-size: 1.2rem;
+    color: #999999;
+}
+
+h2{
+    font-size: 1.5rem;
+    color: #ebecec;
+}
+
+.icons{
+    width: 30px;;
+}
+
+/* Specific section styling */
+
+/* LEFT SECTION TOP STYLING */
+
+.left{ 
+    grid-area: left;
+    background-color: lightblue;
+}
+
+.main-logo{ 
+    
+    width: 100px;;
+}
+
+.home-nav{ 
+    
+    /* make grid */
+}
+
+.make-playlist{ 
+   
+    /* make grid */
+}
+
+/* LEFT SECTION PLAYLIST STYLING */
+
+.playlist{ 
+    
+    background-color: lightgreen;
+}
+
+/* LEFT SECTION USER STYLING */
+
+.install-user{ 
+  
+    background-color: lightpink;
+}
+
+
+/* HEADER STYLING */
+
+.header{ 
+    grid-area: header;
+    background-color: lightslategray;
+}
+
+/* MAIN STYLING */
+
+/* make grid */
+
+.main{ 
+    grid-area: main;
+    background-color: lightyellow;
+}
+
+
+/* FOOTER STYLING */
+
+/* make grid 3 columns */
+
+.footer{ 
+    grid-area: footer;
+    background-color: mediumorchid;
+}
