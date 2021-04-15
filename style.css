@@ -138,6 +138,10 @@ ul {
   margin-top: 15px;
 }
 
+.name {
+  color: #ebecec;
+}
+
 .smallicons {
   width: 15px;
 }
@@ -235,7 +239,20 @@ ul {
   font-size: 0.6rem;
 }
 
+.track-info {
+  color: #ebecec;
+}
+
 .footer-icons {
   width: 15px;
   align-self: center;
+}
+.footer-icons2 {
+  width: 150px;
+  align-self: center;
+}
+
+.right-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 4fr;
 }
