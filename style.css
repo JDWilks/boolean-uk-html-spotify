@@ -31,7 +31,7 @@ body {
 }
 
 .images:hover {
-  box-shadow: 2px 2px 5px #999999;
+  box-shadow: 2px 2px #ffffff49;
   cursor: pointer;
 }
 
@@ -150,7 +150,7 @@ ul {
 }
 
 .list-playlist {
-  height: 200px;
+  height: 185px;
   line-height: 2;
   overflow-y: scroll;
 }
@@ -190,7 +190,7 @@ ul {
 
 .header {
   grid-area: header;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.377);
 }
 
 .upgrade {
@@ -282,9 +282,28 @@ ul {
   margin-bottom: 20px;
 }
 
-/* FOOTER STYLING */
+/* .recent-images {
+  position: relative;
+}
 
-/* make grid 3 columns */
+.overlay {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+.play-button {
+  width: 50px;
+} */
+
+/* FOOTER STYLING */
 
 .footer {
   grid-area: footer;
@@ -299,8 +318,9 @@ ul {
 
 .left-footer {
   display: grid;
-  /* grid-auto-flow: column; */
-  grid-template-columns: 77px 100px 25px 25px;
+  grid-auto-flow: column;
+  justify-content: left;
+  grid-gap: 10px;
 }
 
 .album {
@@ -335,23 +355,33 @@ ul {
 .footer-icons2 {
   width: 150px;
   align-self: center;
+  margin-right: 15px;
 }
 
 .right-footer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 4fr;
+  grid-auto-flow: column;
+  justify-content: right;
+  grid-gap: 10px;
 }
 
 /* media quiries */
 
-/* @media screen and (max-width: 800px) {
+@media screen and (max-width: 375px) {
   .recent-grid-cont {
-    grid-auto-flow: none;
+    grid-auto-flow: row;
   }
   .created-grid-cont {
-    grid-auto-flow: none;
+    grid-auto-flow: row;
   }
   .pop-artist-grid {
-    grid-auto-flow: none;
+    grid-auto-flow: row;
   }
-} */
+
+  .footer {
+    display: none;
+  }
+  .list-playlist {
+    height: 367px;
+  }
+}
