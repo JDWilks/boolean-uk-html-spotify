@@ -384,4 +384,8 @@ ul {
   .list-playlist {
     height: 367px;
   }
+
+  .head-menu {
+    display: none;
+  }
 }
